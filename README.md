@@ -35,3 +35,23 @@ $ npx tsc --init
 package.json
 tsconfig.json
 ```
+
+## tests configurations
+```
+"scripts": {
+  "start": "ts-node src/app.ts",
+  "dev": "nodemon src/app.ts",
+  "test": "jest"
+}
+
+```
+## local tests Files
+
+### file authController.test.ts
+```
+npx jest tests/authController.test.ts
+```
+### file justifyController.test.ts
+```
+npx jest tests/justifyController.test.ts
+```
