@@ -1,7 +1,20 @@
-# Implémentation et déploiement d' une API REST qui justifie un texte passé en paramètre.
+# Implementation and deployment of a REST API which justifies a text passed as a parameter.
 
-### app architecture
+## installation of outbuildings
 
+```
+$ npm install typescript ts-node nodemon express body-parser jsonwebtoken rate-limiter-flexible
+$ npm install --save-dev jest supertest ts-jest @types/express @types/jest @types/jsonwebtoken @types/body-parser
+```
+## init TypeScript and configuration
+
+```
+$ npx tsc --init
+```
+
+## app architecture
+
+```
 /src
   /controllers
     authController.ts
@@ -21,3 +34,4 @@
   justifyController.test.ts
 package.json
 tsconfig.json
+```
