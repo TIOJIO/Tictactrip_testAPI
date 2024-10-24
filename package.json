@@ -2,10 +2,10 @@
   "name": "tictactrip",
   "version": "1.0.0",
   "description": "justify texte Api",
-  "main": "./",
+  "main": "src/app.ts",
   "scripts": {
-    "start": "ts-node ./app.ts",
-    "dev": "nodemon ./app.ts",
+    "start": "ts-node src/app.ts",
+    "dev": "nodemon src/app.ts",
     "test": "jest",
     "build": "tsc"
   },
