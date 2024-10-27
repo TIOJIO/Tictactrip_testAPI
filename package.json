@@ -13,6 +13,10 @@
     "preset": "ts-jest",
     "testEnvironment": "node"
   },
+  "engines": {
+  "node": "16.x"
+}
+,
   "author": "",
   "license": "ISC",
   "dependencies": {
