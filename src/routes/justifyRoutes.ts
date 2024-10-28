@@ -1,3 +1,4 @@
+// src/routes/justifyRoute.ts
 import { Router } from 'express';
 import { justifyText } from '../controllers/justifyController';
 import  {authMiddleware}  from '../middlewares/authMiddleware';

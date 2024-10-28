@@ -96,3 +96,18 @@ git add .
 git commit -m "Prepare app for deployment"
 git push heroku main
 ```
+
+## test example 
+
+- Endpoint pour générer un token
+```
+POST https://tictactrip-26a03a519eb2.herokuapp.com/api/token
+Body: { "email": "foo@bar.com" }
+```
+
+- Endpoint pour justifier un texte (après avoir généré un token) 
+```
+POST https://tictactrip-26a03a519eb2.herokuapp.com/api/justify
+Headers: { Authorization: 'Bearer <your_token>' }
+Body: (Text en plain text)
+```
