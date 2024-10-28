@@ -86,7 +86,7 @@ your package.json must have
 heroku config:set JWT_SECRET=your_secret_value
 ```
 
-- create procfile and put command : web: npm run start
+- create file procfile and put command : web: npm run start
 
 #### buil your app and push
 
