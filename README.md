@@ -55,3 +55,44 @@ npx jest tests/authController.test.ts
 ```
 npx jest tests/justifyController.test.ts
 ```
+
+### deployement documentation
+
+- download and install Heroku CLI
+- login in your Heroku account
+```
+heroku login
+```
+-create new app
+
+```
+heroku create app-name
+```
+
+### project configuration
+your package.json must have
+```
+"engines": {
+  "node": "16.x"
+}
+```
+
+"scripts": {
+  "start": "node dist/app.js"
+}
+
+#### execute this command to configure environnement variable
+```
+heroku config:set JWT_SECRET=your_secret_value
+```
+
+- create procfile and put command : web: npm run start
+
+#### buil your app and push
+
+```
+npm run build
+git add .
+git commit -m "Prepare app for deployment"
+git push heroku main
+```
