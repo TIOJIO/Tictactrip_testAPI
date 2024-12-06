@@ -5,7 +5,7 @@ describe('POST /api/token', () => {
   it('should generate a token and display it in the console', async () => {
     const response = await request(app)
       .post('/api/token')
-     .send({ email: 'foo@bar.com'});
+     .send({ email: 'test@gmail.com'});
 
     // Vérifie que le statut de la réponse est 200
     expect(response.status).toBe(200);
